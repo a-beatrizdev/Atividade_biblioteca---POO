@@ -19,14 +19,14 @@ class Biblioteca:
         return None
     
     def emprestar_item(self, codigo):
-        item = self.buscar_por_codigo(codigo)
+        item = self.buscar_codigo(codigo)
         if item:
             item.emprestar()
         else:
             print(f"Item com código {codigo} não encontrado.")
 
     def devolver_item(self, codigo):
-        item = self.buscar_por_codigo(codigo)
+        item = self.buscar_codigo(codigo)
         if item:
             item.devolver()
         else:
