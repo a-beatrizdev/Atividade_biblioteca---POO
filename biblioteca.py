@@ -2,8 +2,8 @@ class Biblioteca:
     def __init__(self):
         self.__itens = []
 
-    def adiconar_item(self, item):
-            self.__itens.append = item
+    def adicionar_item(self, item):
+            self.__itens.append(item)
             print(f"Item {item.get_titulo()} adicionado com sucesso!")
 
     def listar_itens(self):
